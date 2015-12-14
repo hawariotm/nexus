@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>form</title>
+ <!--javascript and css files-->
+  <script type="text/javascript" src="../javascript/form.js"></script> 
+  <link rel="stylesheet" type="text/css" href="../css/form.css">
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <link rel="icon"type="image/png"href="../images/logo.png">
+ </head>
+
+<!--body starts-->
+ <body background="../images/bg.jpeg">
+
+  <!--division logo-->
+  <div id="logo">
+  <img src="../images/logo.png" alt="HTML5 Icon" style="height:99px;">
+  <h1> Nexus Online </h1>
+  </div>
+ <!--division form-->
+    <div id="menu">
+    <a href="index.html">home</a>
+    <a href="form.html">register</a>
+    </div>
+    <div id="bg"></div>
+<!--division form-->
+   <div id="register">
+      <form name="myForm" onsubmit="return validateForm()" method="post">
+         <!-- <fieldset> -->
+         <LEGEND> <b> Register Here </b></LEGEND>
+          <table>
+            <tr>
+             <td>
+             First name:</td> <td>  <input type="text" name="first_name" placeholder="First name" /> </td></tr>
+             <tr>
+             <td>
+             Last name:</td><td>  <input type="text" name="last_name" placeholder="Last Name"/></td></tr>
+             <tr>
+             <td>
+               Sex:</td>
+             <td><input type="radio" name="sex" value="male" > Male</td></tr>
+             <tr>
+             <td></td>
+             <td><input type="radio" name="sex" value="female"> Female</td></tr>
+             <tr>
+             
+      
+             <td height="35">Country:</td>
+                    <td height="35">
+                        <select name="country" id="country">  
+                               <option selected="" value="Default" required>(Please select a country)</option>  
+                            <option value="AF">Australia</option>  
+                            <option value="AL">Canada</option>  
+                            <option value="DZ">India</option>  
+                               <option value="AS">Russia</option>  
+                            <option value="AD">USA</option>  
+                        </select>
+                    </td>
+                </tr>
+                  <tr>
+                    <td height="35">Language:</td>
+                    <td height="35">
+                        <input type="checkbox" name="language" value="en" id="language"/><span>English</span>
+                        <input type="checkbox" name="language" value="noen" /><span>Non English</span>
+                    </td>
+                </tr>
+                
+
+             <tr>
+             <td>
+              User ID:</td><td>  <input type="text" name="user_id" /></td></tr>
+            <br>
+             <tr>
+             <td>
+             Password:</td><td><input type="password" name="password" /></td></tr>
+            <br>
+             <tr>
+             <td>
+              email:</td><td><input type="email" name="email"/></td></tr>
+            <br>
+           </table>
+         <center>
+         <input type="submit" name="register" value="Submit" />
+         <input type="reset" value="Reset">
+         </center>
+         </fieldset>
+      </form>
+   </div>
+ <!--footer-->
+ <div id="footer">
+  <footer>
+     <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+  </footer>
+ </body>
+</html>
