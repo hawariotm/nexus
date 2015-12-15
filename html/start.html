@@ -11,13 +11,13 @@
          c=b[0].split("=");
          d=c[1].split("%40");
          e=d[0];
-         
+         sessionStorage.f = e;
          
          var str=""
         
            str="Hi "+e;
                                           
-         document.getElementById("results").innerHTML=str
+         document.getElementById("results").innerHTML="Hi "+sessionStorage.f
                       }
     onload=function(){
            getQuerystring()
