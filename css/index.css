@@ -10,9 +10,9 @@ body{
     background-color:#000000;
     font-family: "Raleway" ,"sans-serif";
     font-size:110%;
-    text-align:right;
+    text-align:left;
     padding:5px;
-    float: right;
+    float: left;
     margin-left: 0;
     /*margin-top: 70px;*/
     height:30px;
@@ -56,9 +56,18 @@ border-top: 2px solid #FFF;
 
 #logo h1{
     color:white;
+    font-family: "Raleway" ,"sans-serif";
 	top: 0;
 	padding-left: 40%;
 	margin-top: -5%;
+}
+#message{
+font-size: 12px;
+color: red;
+font-family: "Raleway" ,"sans-serif";
+/*margin-top: 120px;*/
+margin-left: 67%;
+margin-top: -200px;
 }
 #footer{
     margin-left: 0px;
@@ -72,4 +81,8 @@ border-top: 2px solid #FFF;
 }
 #footer a:link{
     background-color:#323232
+}
+#results{
+    color:white;
+    font-family: "Raleway" ,"sans-serif";
 }
