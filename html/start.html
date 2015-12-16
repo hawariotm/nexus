@@ -7,26 +7,24 @@
        function getQuerystring(){
          var q=document.location.toString();
          a=q.split("?");
+         if(a[1]){
          b=a[1].split("&");
          c=b[0].split("=");
          d=c[1].split("%40");
          e=d[0];
          sessionStorage.f = e;
-         
-         var str=""
-        
-           str="Hi "+e;
-                                          
-         document.getElementById("results").innerHTML="Hi "+sessionStorage.f
-                      }
-    onload=function(){
-           getQuerystring()
-                     }
+                  }                          
+                  }
+          getQuerystring();           
+    window.onload=function(){
+           // getQuerystring();
+           document.getElementById("results").innerHTML="Hi "+sessionStorage.f;
+                     };
      </script>
 
      <link rel="icon"type="image/png"href="../images/logo.png">
    </head>
- <body background="../images/bg.jpeg">
+ <body background="../images/bg.jpeg" >
 
     <div id="logo">
 	  <img src="../images/logo.png" alt="HTML5 Icon" style="height:99px;">
