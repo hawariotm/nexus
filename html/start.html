@@ -16,10 +16,23 @@
                   }                          
                   }
           getQuerystring();           
-    window.onload=function(){
+window.onload=function(){
            // getQuerystring();
-           document.getElementById("results").innerHTML="Hi "+sessionStorage.f;
-                     };
+           if(sessionStorage.f) {
+             document.getElementById("results").innerHTML="Hi "+sessionStorage.f;
+
+                    }
+                    else{
+                     window.location.href = './index.html'; 
+                    }
+          
+           
+                   }
+  function myFunction() {
+    sessionStorage.f ="";
+    window.location.href = './index.html';
+
+}
      </script>
 
      <link rel="icon"type="image/png"href="../images/logo.png">
@@ -35,7 +48,8 @@
     <div id="menu">
        <a href="start.html">home</a>
        <a href="form.html">register</a>
-       <a href="index.html">login</a>
+       
+       <button onclick="myFunction()">logout</button>
     </div>
     <div class="h">
                    <center> <h3> Your search ends here...</h3></center>

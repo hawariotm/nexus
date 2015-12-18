@@ -1,9 +1,9 @@
 
 function validateLoginForm() {
  
-     var a = document.forms["myLoginForm"]["username"].value.length;
+     var a = document.forms["myLoginForm"]["user"].value.length;
       var b = document.forms["myLoginForm"]["password"].value.length;
-      var c = document.forms["myLoginForm"]["username"].value;
+      var c = document.forms["myLoginForm"]["user"].value;
     if (a < 4 || a > 20) {
         alert("User name must be between 4 to 12 characters");
         return false;

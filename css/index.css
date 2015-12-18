@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-   /*background-image: url("../images/a.PNG");*/
+   background-image: url("../images/bg.jpeg");
         /*background-repeat: repeat-x repeat-y;*/
 
 
@@ -85,4 +85,8 @@ margin-top: -200px;
 #results{
     color:white;
     font-family: "Raleway" ,"sans-serif";
+}
+button{
+	float: right;
+	margin-right: 5px;
 }
